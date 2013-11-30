@@ -1,5 +1,5 @@
-search_civievent
-================
+com_search_civievent
+====================
 
 A `Joomla!` component to search for and return CiviCRM's events (CiviEvent) via a component similar to and based on Joomla's com_search.
 
