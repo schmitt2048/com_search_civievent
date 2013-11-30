@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5" method="upgrade">
+    <name>com_search_civievent</name>
+    <creationDate>2013-11-30</creationDate>
+    <copyright>Copyright (C) 2013. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <author>Andrew Schmitt who extended the Joomla com_search component</author>
+    <authorEmail>com_search_civievent@schmitt.cc</authorEmail>
+    <authorUrl>https://www.schmitt.info</authorUrl>
+    <version>c.20131130.0312</version>
+    <description>A clone of the Joomla! com_search component that searches only events using a MODIFIED version of the  CiviCRM-Search-Plugin plugin from Brian Shaughnessy (http://www.lcdservices.biz) with the original available at github.  That MODIFIED version of the plugin must be installed FIRST.</description>
+    
+
+    <files folder="site">
+        <filename>controller.php</filename>
+        <filename>index.html</filename>
+        <filename>router.php</filename>
+        <filename>search_civievent.php</filename>
+        <filename>search.php</filename>
+        <folder>views</folder>
+        <folder>models</folder>
+    </files>
+    <languages folder="site">
+			<language tag="en-GB">language/en-GB.com_search_civievent.ini</language>
+    </languages>
+    <administration>
+        <menu img="components/com_search_civievent/assets/images/s_com_search_civievent.png" >COM_SEARCH_CIVIEVENT</menu>
+        <submenu>
+	  <menu link="option=com_search_civievent&amp;view=searches" 
+		view="searches" img="components/com_search_civievent/assets/images/s_searches.png" 
+		alt="Search_civievent/Searches">COM_SEARCH_CIVIEVENT_TITLE_SEARCHES</menu>
+        </submenu>
+        <files folder="administrator">
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <filename>search.php</filename>
+            <filename>search.xml</filename>
+            <folder>assets</folder>
+            <folder>controllers</folder>
+            <folder>helpers</folder>
+            <folder>models</folder>
+            <folder>views</folder>
+        </files>
+        <languages folder="administrator">
+			<language tag="en-GB">language/en-GB.com_search_civievent.ini</language>
+			<language tag="en-GB">language/en-GB.com_search_civievent.sys.ini</language>
+
+        </languages>
+    </administration>
+</extension>
+
