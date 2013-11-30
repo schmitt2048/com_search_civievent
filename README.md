@@ -17,3 +17,4 @@ This clone of sorts of the Joomla! com_search component that searches only event
 ###BUGS, ENHANCEMENT WISH LIST:
 - see repo in github
 
+.
